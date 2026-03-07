@@ -1,0 +1,337 @@
+By CortexKnight, contest: Codeforces Beta Round 84 (Div. 2 Only), problem: (A) Nearly Lucky Number, Accepted.
+
+code:
+
+#include<stdio.h>
+int main()
+{
+    long long n;
+    int count=0;
+    scanf("%lld",&n);
+    while(n>0)
+    {
+      int no = n%10;
+      if( no==4 || no==7)
+      {
+        count++;
+      } 
+      n=n/10;
+    }
+    if(count==4||count==7)
+    {
+        printf("YES");
+    }
+    else
+    {
+        printf("NO");
+    }
+}
+
+→Judgement Protocol
+
+Test: #1, time: 0 ms., memory: 20 KB, exit code: 0, checker exit code: 0, verdict: OK
+Input
+40047
+Output
+NO
+Answer
+NO
+Checker Log
+ok NO
+Test: #2, time: 0 ms., memory: 24 KB, exit code: 0, checker exit code: 0, verdict: OK
+Input
+7747774
+Output
+YES
+Answer
+YES
+Checker Log
+ok YES
+Test: #3, time: 0 ms., memory: 0 KB, exit code: 0, checker exit code: 0, verdict: OK
+Input
+1000000000000000000
+Output
+NO
+Answer
+NO
+Checker Log
+ok NO
+Test: #4, time: 30 ms., memory: 0 KB, exit code: 0, checker exit code: 0, verdict: OK
+Input
+7
+Output
+NO
+Answer
+NO
+Checker Log
+ok NO
+Test: #5, time: 30 ms., memory: 0 KB, exit code: 0, checker exit code: 0, verdict: OK
+Input
+4
+Output
+NO
+Answer
+NO
+Checker Log
+ok NO
+Test: #6, time: 30 ms., memory: 20 KB, exit code: 0, checker exit code: 0, verdict: OK
+Input
+474404774
+Output
+NO
+Answer
+NO
+Checker Log
+ok NO
+Test: #7, time: 30 ms., memory: 12 KB, exit code: 0, checker exit code: 0, verdict: OK
+Input
+4744000695826
+Output
+YES
+Answer
+YES
+Checker Log
+ok YES
+Test: #8, time: 0 ms., memory: 0 KB, exit code: 0, checker exit code: 0, verdict: OK
+Input
+10000000004744744
+Output
+YES
+Answer
+YES
+Checker Log
+ok YES
+Test: #9, time: 0 ms., memory: 16 KB, exit code: 0, checker exit code: 0, verdict: OK
+Input
+446486416781684178
+Output
+YES
+Answer
+YES
+Checker Log
+ok YES
+Test: #10, time: 0 ms., memory: 0 KB, exit code: 0, checker exit code: 0, verdict: OK
+Input
+999999999
+Output
+NO
+Answer
+NO
+Checker Log
+ok NO
+Test: #11, time: 30 ms., memory: 0 KB, exit code: 0, checker exit code: 0, verdict: OK
+Input
+7777
+Output
+YES
+Answer
+YES
+Checker Log
+ok YES
+Test: #12, time: 30 ms., memory: 0 KB, exit code: 0, checker exit code: 0, verdict: OK
+Input
+87414417444
+Output
+NO
+Answer
+NO
+Checker Log
+ok NO
+Test: #13, time: 0 ms., memory: 0 KB, exit code: 0, checker exit code: 0, verdict: OK
+Input
+111222333444555667
+Output
+YES
+Answer
+YES
+Checker Log
+ok YES
+Test: #14, time: 0 ms., memory: 8 KB, exit code: 0, checker exit code: 0, verdict: OK
+Input
+1
+Output
+NO
+Answer
+NO
+Checker Log
+ok NO
+Test: #15, time: 0 ms., memory: 0 KB, exit code: 0, checker exit code: 0, verdict: OK
+Input
+4700
+Output
+NO
+Answer
+NO
+Checker Log
+ok NO
+Test: #16, time: 30 ms., memory: 0 KB, exit code: 0, checker exit code: 0, verdict: OK
+Input
+3794555488744477
+Output
+NO
+Answer
+NO
+Checker Log
+ok NO
+Test: #17, time: 30 ms., memory: 12 KB, exit code: 0, checker exit code: 0, verdict: OK
+Input
+444444444444444444
+Output
+NO
+Answer
+NO
+Checker Log
+ok NO
+Test: #18, time: 0 ms., memory: 0 KB, exit code: 0, checker exit code: 0, verdict: OK
+Input
+474447447774444774
+Output
+NO
+Answer
+NO
+Checker Log
+ok NO
+Test: #19, time: 0 ms., memory: 16 KB, exit code: 0, checker exit code: 0, verdict: OK
+Input
+777777777777777
+Output
+NO
+Answer
+NO
+Checker Log
+ok NO
+Test: #20, time: 0 ms., memory: 72 KB, exit code: 0, checker exit code: 0, verdict: OK
+Input
+34777745021000000
+Output
+NO
+Answer
+NO
+Checker Log
+ok NO
+Test: #21, time: 0 ms., memory: 0 KB, exit code: 0, checker exit code: 0, verdict: OK
+Input
+963
+Output
+NO
+Answer
+NO
+Checker Log
+ok NO
+Test: #22, time: 0 ms., memory: 0 KB, exit code: 0, checker exit code: 0, verdict: OK
+Input
+855474448854788540
+Output
+NO
+Answer
+NO
+Checker Log
+ok NO
+Test: #23, time: 30 ms., memory: 0 KB, exit code: 0, checker exit code: 0, verdict: OK
+Input
+999999999999994744
+Output
+YES
+Answer
+YES
+Checker Log
+ok YES
+Test: #24, time: 0 ms., memory: 0 KB, exit code: 0, checker exit code: 0, verdict: OK
+Input
+400000000474
+Output
+YES
+Answer
+YES
+Checker Log
+ok YES
+Test: #25, time: 30 ms., memory: 0 KB, exit code: 0, checker exit code: 0, verdict: OK
+Input
+123456789123456789
+Output
+YES
+Answer
+YES
+Checker Log
+ok YES
+Test: #26, time: 30 ms., memory: 0 KB, exit code: 0, checker exit code: 0, verdict: OK
+Input
+740577777584945874
+Output
+NO
+Answer
+NO
+Checker Log
+ok NO
+Test: #27, time: 0 ms., memory: 0 KB, exit code: 0, checker exit code: 0, verdict: OK
+Input
+7777777
+Output
+YES
+Answer
+YES
+Checker Log
+ok YES
+Test: #28, time: 0 ms., memory: 0 KB, exit code: 0, checker exit code: 0, verdict: OK
+Input
+4444000111222333
+Output
+YES
+Answer
+YES
+Checker Log
+ok YES
+Test: #29, time: 0 ms., memory: 0 KB, exit code: 0, checker exit code: 0, verdict: OK
+Input
+9847745885202111
+Output
+YES
+Answer
+YES
+Checker Log
+ok YES
+Test: #30, time: 62 ms., memory: 0 KB, exit code: 0, checker exit code: 0, verdict: OK
+Input
+123456000000
+Output
+NO
+Answer
+NO
+Checker Log
+ok NO
+Test: #31, time: 0 ms., memory: 0 KB, exit code: 0, checker exit code: 0, verdict: OK
+Input
+4744447444444
+Output
+NO
+Answer
+NO
+Checker Log
+ok NO
+Test: #32, time: 0 ms., memory: 0 KB, exit code: 0, checker exit code: 0, verdict: OK
+Input
+7477
+Output
+YES
+Answer
+YES
+Checker Log
+ok YES
+Test: #33, time: 0 ms., memory: 16 KB, exit code: 0, checker exit code: 0, verdict: OK
+Input
+4747477
+Output
+YES
+Answer
+YES
+Checker Log
+ok YES
+Test: #34, time: 30 ms., memory: 0 KB, exit code: 0, checker exit code: 0, verdict: OK
+Input
+777777777444444444
+Output
+NO
+Answer
+NO
+Checker Log
+ok NO
